@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: RabbitMQ-example
+
+  rabbitmq:
+    host: pmazurek.ddns.net
+#    host: 192.168.1.11
+    port: 5672
+
+  # Dane logowania (domyślne to guest/guest)
+    username: 001234
+    password: h001234
+
+  # Opcjonalnie: Nazwa kolejki, której będziemy używać w kodzie
+  app:
+    rabbitmq:
+      queue: testQueue
+      exchange: mojexchange
+      routingkey: mojklucz

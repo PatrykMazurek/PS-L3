@@ -1,0 +1,21 @@
+package com.example.mqtt_example.model;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+import java.time.LocalDateTime;
+
+@AllArgsConstructor
+@NoArgsConstructor
+@Setter
+@Getter
+public class Message {
+
+    private String user;
+    private String text;
+    private LocalDateTime dateTime;
+
+
+}
